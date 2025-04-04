@@ -31,7 +31,8 @@ const loginSlice = createSlice({
     reducers: {},
     extraReducers: builder => {
         builder.addCase(loginRequested.fulfilled, (state, action) => {
-            console.log({state})
+            state.user = action.payload.user
+            state.isLoggedIn = true
         })
     }
 })

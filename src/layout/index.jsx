@@ -78,11 +78,11 @@ const App = () => {
                     <Header style={{ padding: 0, background: colorBgContainer }} />
                     : null
                 }
-                <Content style={{ margin: '15px 16px' }}>
+                <Content style={{ margin:  isLoggedIn ? '15px 16px' : 0 }}>
                     <div
                         style={{
-                            padding: isLoggedIn ? 24 : "auto",
-                            minHeight: isLoggedIn ? 360 : "inherit",
+                            padding: isLoggedIn ? 24 : 0,
+                            minHeight: isLoggedIn ? 360 : "100vh",
                             background: isLoggedIn ? colorBgContainer : "transparent",
                             borderRadius: isLoggedIn ? borderRadiusLG : "auto",
                         }}
@@ -91,7 +91,7 @@ const App = () => {
                     </div>
                 </Content>
                 {isLoggedIn ? <Footer style={{ textAlign: 'center' }}>
-                    Ant Design ©{new Date().getFullYear()} Created by Ant UED
+                    Explore Islam &copy;{new Date().getFullYear()} | Designed and Developed By: <a target='_blank' href='https://octasoftavenue.com' className='font-bold' >ItsAsad.PK</a>
                 </Footer> : null}
             </Layout>
         </Layout>
