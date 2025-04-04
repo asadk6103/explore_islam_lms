@@ -1,13 +1,19 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import ProtectedRoute from "./protected";
+import { ROUTES } from "./constants";
+import { useSelector } from "react-redux";
+import { getIsLoggedIn } from "../../pages/Login/loginSlice";
+import Login from "../../pages/Login";
 
 const Navigation = () => {
-    const isLoggedIn = true
+    const isLoggedIn = useSelector(getIsLoggedIn)
+
+    console.log({isLoggedIn})
     return (
         <>
             <Routes>
-                <Route index element={isLoggedIn ? <Navigate to={`/dashboard`} replace /> : <SignIn />} />
-                {APP_ROUTES.map((route) => (
+                <Route index element={isLoggedIn ? <Navigate to={`/dashboard`} replace /> : <Login />} />
+                {ROUTES.map((route) => (
                     route.childrens && route.childrens.length > 0 ?
                         <Route
                             key={route.label}

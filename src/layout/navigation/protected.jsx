@@ -1,12 +1,13 @@
 import { useSelector } from "react-redux"
-import { getIsLoggedIn, getRole } from "../../screen/Auth/authSlice"
 import { Navigate, Outlet } from "react-router-dom"
+import { getIsLoggedIn } from "../../pages/Login/loginSlice"
 
 
 const ProtectedRoute = ({ roles, permission, redirectPath = "/", children }) => {
+    // const isLoggedIn = true
     const isLoggedIn = useSelector(getIsLoggedIn)
     // const userPermissions = useSelector(getPermissions)
-    const role = useSelector(getRole)
+    const role ='admin'
 
     if (isLoggedIn && roles.includes(role)) {
         return children ? children : <Outlet />
