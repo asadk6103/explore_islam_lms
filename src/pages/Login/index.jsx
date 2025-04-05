@@ -32,7 +32,6 @@ const Login = () => {
 
   return (
     <>
-      {console.log({ errors })}
       <Box boxClasses={"!min-h-[100vh] flex items-center justify-center"}>
         <div className="grid grid-col-1 items-center bg-white p-4 min-w-[90%] md:min-w-[450px] shadow-lg border-t-4">
           <Typography.Title className='text-center' level={3} >Login</Typography.Title>
