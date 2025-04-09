@@ -5,6 +5,8 @@ import AutoCompleteSearch from '../../components/AutoCompleteSearch'
 import BackgroundExplore from '@/assets/static/bg/bg_explore.png'
 import { APP_ICONS } from '../../common/icons'
 import Button from '../../components/Button'
+import CategoriesCards from '../../components/CategoriesCards'
+import { SAMPLE_COURSES } from './constants'
 
 const Explore = () => {
     return (
@@ -31,9 +33,13 @@ const Explore = () => {
                     </Col>
                 </Row>
 
-                <Row>
-                    
-                </Row>
+               <CategoriesCards buttonColor={"!bg-green-500"} title={"Recommended for your kid"} courses={SAMPLE_COURSES} />
+               <CategoriesCards buttonColor={"!bg-orange-500"}title={"Recently Uploaded"} courses={SAMPLE_COURSES} />
+               <CategoriesCards buttonColor={"!bg-red-500"} title={"Kidz favourite"} courses={SAMPLE_COURSES} />
+               <CategoriesCards buttonColor={"!bg-purple-500"} title={"Life of Property (PBUH)"} courses={SAMPLE_COURSES} />
+               <CategoriesCards title={"Battles In Islam"} courses={SAMPLE_COURSES} />
+               <CategoriesCards title={"Islamic Places"} courses={SAMPLE_COURSES} />
+               <CategoriesCards title={"Islamic Heroes"} courses={SAMPLE_COURSES} />
             </Layout>
         </>
     )
