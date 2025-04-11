@@ -3,6 +3,7 @@ import { APP_ICONS } from '../../common/icons'
 import Profile from '../../pages/Profile'
 import ChangePassword from '../../pages/ChangePassword'
 import Explore from '../../pages/Explore'
+import CourseDetails from '../../pages/CourseDetails'
 
 export const APP_SLUGS = {
     redirectPath: "/",
@@ -15,7 +16,8 @@ export const APP_SLUGS = {
     changePassword: "change-password",
     forgottenPassword: "forgotten-password",
     myCourses: "my-courses",
-    explore: "explore"
+    explore: "explore",
+    courseDetails: 'course-details'
 }
 
 
@@ -40,6 +42,18 @@ export const ROUTES = [
         screen: Explore,
         isProtected: true,
         showInMenu: true,
+        role: ["admin"],
+        permission: "dashboard",
+        childrens: []
+    },
+    {
+        url: `/${APP_SLUGS.courseDetails}`,
+        label: APP_SLUGS.courseDetails,
+        redirectPath: APP_SLUGS.redirectPath,
+        icon: APP_ICONS.DashboardIcon,
+        screen: CourseDetails,
+        isProtected: true,
+        showInMenu: false,
         role: ["admin"],
         permission: "dashboard",
         childrens: []

@@ -142,7 +142,7 @@ const App = () => {
 
             <Layout>
 
-                <Content >
+                <Content className='w-full lg:w-[90%] lg:m-auto xl:w-[80%] xl:m-auto p-4 lg:p-6 xl:p-8' >
                     {/* <div
                         style={{
                             padding: isLoggedIn ? 24 : 0,
