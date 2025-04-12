@@ -1,4 +1,4 @@
-import { AudioLines, ChevronDown, FileText, Gauge, KeyRound, Power, Search, ShieldUser, UserPen, Video } from "lucide-react";
+import { AudioLines, ChevronDown, FileText, Gauge, KeyRound, MoveLeft, Power, Search, ShieldUser, ThumbsDown, ThumbsUp, UserPen, Video } from "lucide-react";
 
 
 
@@ -12,6 +12,9 @@ export const APP_ICONS = {
     SearchIcon: Search,
     VideoIcon: Video,
     AudioIcon: AudioLines,
-    PDFIcon: FileText
+    PDFIcon: FileText,
+    MoveLeftIcon: MoveLeft,
+    LikeIcon: ThumbsUp,
+    DisLikeIcon: ThumbsDown
 
 }

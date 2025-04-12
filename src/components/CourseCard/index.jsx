@@ -14,6 +14,7 @@ const CourseCard = ({item, buttonColor}) => {
         width: "100%",
         textAlign:"left"
     }}
+    className='!border !border-2 !border-gray-300'
    >
     <Typography.Title className='text-left' level={4}>{item?.name ? item?.name?.slice(0,50) + "..." : item?.name}</Typography.Title>
     <Typography.Text className='!text-left'>{item?.description ? item?.description?.slice(0,70) + "..." : item?.description}</Typography.Text>

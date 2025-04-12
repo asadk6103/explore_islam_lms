@@ -12,7 +12,7 @@ const Explore = () => {
     return (
         <>
             <Layout>
-                <Row style={{
+                {/* <Row style={{
                     background: `url(${BackgroundExplore})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
@@ -25,21 +25,23 @@ const Explore = () => {
                             span: 6, offset: 9
                         }}
                     >
-                        <AutoCompleteSearch icon={<APP_ICONS.SearchIcon />} style={{ width: "100%",  overflow: "hidden !important" }} />
+                        <AutoCompleteSearch icon={<APP_ICONS.SearchIcon />} style={{ width: "100%", overflow: "hidden !important" }} />
                         <div className='flex flex-row items-center justify-center gap-4 mt-4'>
                             <Button shape="round" label='Search' className='w-[200px]' variant={"default"} ></Button>
                             <Button shape="round" label='Explore Categories' className='w-[200px]' variant={"default"} ></Button>
                         </div>
                     </Col>
-                </Row>
+                </Row> */}
 
-               <CategoriesCards buttonColor={"!bg-green-500"} title={"Recommended for your kid"} courses={SAMPLE_COURSES} />
-               <CategoriesCards buttonColor={"!bg-orange-500"}title={"Recently Uploaded"} courses={SAMPLE_COURSES} />
-               <CategoriesCards buttonColor={"!bg-red-500"} title={"Kidz favourite"} courses={SAMPLE_COURSES} />
-               <CategoriesCards buttonColor={"!bg-purple-500"} title={"Life of Property (PBUH)"} courses={SAMPLE_COURSES} />
-               <CategoriesCards title={"Battles In Islam"} courses={SAMPLE_COURSES} />
-               <CategoriesCards title={"Islamic Places"} courses={SAMPLE_COURSES} />
-               <CategoriesCards title={"Islamic Heroes"} courses={SAMPLE_COURSES} />
+                <Box boxClasses='bg-white px-8 py-8 shadow-lg'>
+                    <CategoriesCards buttonColor={"!bg-green-500"} title={"Recommended for your kid"} courses={SAMPLE_COURSES} />
+                </Box>
+                <Box boxClasses='bg-white px-8 py-8 shadow-lg'><CategoriesCards buttonColor={"!bg-orange-500"} title={"Recently Uploaded"} courses={SAMPLE_COURSES} /></Box>
+                <Box boxClasses='bg-white px-8 py-8 shadow-lg'><CategoriesCards buttonColor={"!bg-red-500"} title={"Kidz favourite"} courses={SAMPLE_COURSES} /></Box>
+                <Box boxClasses='bg-white px-8 py-8 shadow-lg'><CategoriesCards buttonColor={"!bg-purple-500"} title={"Life of Property (PBUH)"} courses={SAMPLE_COURSES} /></Box>
+                <Box boxClasses='bg-white px-8 py-8 shadow-lg'><CategoriesCards title={"Battles In Islam"} courses={SAMPLE_COURSES} /></Box>
+                <Box boxClasses='bg-white px-8 py-8 shadow-lg'><CategoriesCards title={"Islamic Places"} courses={SAMPLE_COURSES} /></Box>
+                <Box boxClasses='bg-white px-8 py-8 shadow-lg'><CategoriesCards title={"Islamic Heroes"} courses={SAMPLE_COURSES} /></Box>
             </Layout>
         </>
     )

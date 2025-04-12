@@ -24,6 +24,11 @@ export default function Slider({ courses, buttonColor }) {
         pagination={{
           type: 'fraction',
         }}
+        modules={{Navigation}}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
       >
         {courses && courses.length > 0 ?
           courses.map((course, idx) => (

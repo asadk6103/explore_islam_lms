@@ -5,14 +5,11 @@ import Box from '../Box'
 
 const CategoriesCards = ({title, courses, buttonColor=null}) => {
   return (
-    <Layout style={{
-      width: "100%",
-      padding: 20
-    }}>
+    <div>
       <Box title={title}>
         <Slider courses={courses} buttonColor={buttonColor} />
       </Box>
-    </Layout>
+    </div>
   )
 }
 

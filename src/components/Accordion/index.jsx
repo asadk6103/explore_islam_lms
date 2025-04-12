@@ -6,7 +6,7 @@ import AccordionItems from './AccordionItems'
 
 const Accordion = ({ wrapperClasses = "", title = "Course Completion", items = [] }) => {
     return (
-        <div className={`${wrapperClasses} col-span-12 md:col-span-4 bg-white shadow-lg rounded-xl`}>
+        <div className={`${wrapperClasses} col-span-12 md:col-span-4`}>
             <div className='p-4 bg-gray-300'>
                 <h2 className='text-xl font-bold'>{title}</h2>
             </div>
@@ -37,7 +37,7 @@ const Accordion = ({ wrapperClasses = "", title = "Course Completion", items = [
                     ))
                     : ""}
             </Collapse> */}
-            <AccordionItems />
+            <AccordionItems items={items} />
             
         </div>
     )
