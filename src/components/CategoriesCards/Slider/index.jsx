@@ -13,8 +13,9 @@ import './index.css';
 // import required modules
 import { Navigation, Pagination } from 'swiper/modules';
 import CourseCard from '../../CourseCard';
+import OptedCourseCard from '../../OptedCourseCard';
 
-export default function Slider({ courses, buttonColor }) {
+export default function Slider({ courses, buttonColor, variant = null, progress=null }) {
   return (
     <>
       <Swiper
@@ -24,7 +25,7 @@ export default function Slider({ courses, buttonColor }) {
         pagination={{
           type: 'fraction',
         }}
-        modules={{Navigation}}
+        modules={{ Navigation }}
         navigation={{
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -33,7 +34,7 @@ export default function Slider({ courses, buttonColor }) {
         {courses && courses.length > 0 ?
           courses.map((course, idx) => (
             <SwiperSlide key={idx}>
-              <CourseCard item={course} buttonColor={buttonColor ? buttonColor : null} />
+              <CourseCard variant={variant} item={course} buttonColor={buttonColor ? buttonColor : null} progress={progress} />
             </SwiperSlide>
           ))
           : null}
