@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@theme {
+    --color-pink-50: oklch(0.95 0.0298 348.19);
+    --color-pink-100: oklch(0.85 0.0934 351.32);
+    --color-pink-200: oklch(0.76 0.157 354.37);
+    --color-pink-300: oklch(0.69 0.2143 357.67);
+    --color-pink-400: oklch(0.64 0.2464 3.05);
+    --color-pink-500: oklch(0.58 0.2319 6.75);
+    --color-pink-600: oklch(0.48 0.1922 5.91);
+    --color-pink-700: oklch(0.38 0.15 4.52);
+    --color-pink-800: oklch(0.27 0.1051 3.02);
+    --color-pink-900: oklch(0.14 0.0532 354.52);
+
+
+    --color-orange-50: oklch(0.96 0.0214 46.99);
+    --color-orange-100: oklch(0.88 0.0656 46.98);
+    --color-orange-200: oklch(0.81 0.1126 45.6);
+    --color-orange-300: oklch(0.74 0.1589 44.9);
+    --color-orange-400: oklch(0.69 0.1983 41.57);
+    --color-orange-500: oklch(0.62 0.1969 38.98);
+    --color-orange-600: oklch(0.52 0.1618 39.53);
+    --color-orange-700: oklch(0.4 0.1235 40.73);
+    --color-orange-800: oklch(0.29 0.0833 43.36);
+    --color-orange-900: oklch(0.16 0.0386 56.87);
+
+
+    --color-yellow-50: oklch(0.98 0.0251 86.87);
+    --color-yellow-100: oklch(0.94 0.0724 87.27);
+    --color-yellow-200: oklch(0.9 0.1161 86.95);
+    --color-yellow-300: oklch(0.86 0.1494 84.65);
+    --color-yellow-400: oklch(0.83 0.1675 80.75);
+    --color-yellow-500: oklch(0.76 0.1577 77.91);
+    --color-yellow-600: oklch(0.63 0.1308 78.33);
+    --color-yellow-700: oklch(0.49 0.1024 79.05);
+    --color-yellow-800: oklch(0.35 0.0719 80.56);
+    --color-yellow-900: oklch(0.19 0.0383 89.07);
+
+
+    --color-blue-50: oklch(0.95 0.0241 259.82);
+    --color-blue-100: oklch(0.85 0.073 259.99);
+    --color-blue-200: oklch(0.76 0.1246 259.41);
+    --color-blue-300: oklch(0.67 0.1774 259.59);
+    --color-blue-400: oklch(0.59 0.2246 260.29);
+    --color-blue-500: oklch(0.52 0.225303 261.1346);
+    --color-blue-600: oklch(0.43 0.1849 260.86);
+    --color-blue-700: oklch(0.34 0.1421 260.35);
+    --color-blue-800: oklch(0.25 0.0944 258.58);
+    --color-blue-900: oklch(0.14 0.0412 250.68);
+
+
+    --color-cyan-50: oklch(0.98 0.0262 179.08);
+    --color-cyan-100: oklch(0.94 0.0759 176.38);
+    --color-cyan-200: oklch(0.91 0.1193 174.13);
+    --color-cyan-300: oklch(0.89 0.1513 171.71);
+    --color-cyan-400: oklch(0.87 0.1727 168.15);
+    --color-cyan-500: oklch(0.8 0.1645 166.63);
+    --color-cyan-600: oklch(0.67 0.1362 166.81);
+    --color-cyan-700: oklch(0.52 0.1052 167.67);
+    --color-cyan-800: oklch(0.36 0.0715 169.53);
+    --color-cyan-900: oklch(0.19 0.0346 174.5);
+
+
+    --color-gray-50: oklch(0.96 0 0);
+    --color-gray-100: oklch(0.89 0 0);
+    --color-gray-200: oklch(0.8 0 0);
+    --color-gray-300: oklch(0.73 0 0);
+    --color-gray-400: oklch(0.64 0 0);
+    --color-gray-500: oklch(0.56 0 0);
+    --color-gray-600: oklch(0.46 0 0);
+    --color-gray-700: oklch(0.37 0 0);
+    --color-gray-800: oklch(0.27 0 0);
+    --color-gray-900: oklch(0.16 0 0);
+
+    --font-baloo-2: "Baloo 2", sans-serif;
+    --font-fredoka: "Fredoka", sans-serif;
+    --font-comic-neue: "Comic Neue", cursive;
+}
